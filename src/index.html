@@ -14,15 +14,23 @@
     />
   </head>
   <body>
-    <div>
-      <form action="" class="form">
-        <input type="text" placeholder="Search images..." />
-        <button type="submit" class="btn">Search</button>
+    <div class="container">
+      <form class="gallery-form">
+        <input
+          class="search-input"
+          type="text"
+          name="search"
+          placeholder="Search images..."
+          autocomplete="off"
+        />
+        <button class="search-btn" type="submit">Search</button>
       </form>
+
       <ul class="gallery"></ul>
-      <button type="button" class="btn btn-load" style="display: none">
-        Load more
-      </button>
+
+      <span class="loader hidden"></span>
+
+      <button class="load-more-btn hidden">Load more</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./main.js"></script>
